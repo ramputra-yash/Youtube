@@ -12,7 +12,7 @@ passport.use(
         {
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: process.env.GOOGLE_CB_URL,
+            callbackURL: "https://youtube2-vy3b.onrender.com/auth/google/callback",
         },
         async (accessToken, refreshToken, profile, done) => {
             try {
